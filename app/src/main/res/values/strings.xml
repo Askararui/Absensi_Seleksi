@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Absensi Seleksi</string>
+    <string name="login_title">Login</string>
+    <string name="login_button">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="username_label">USERNAME</string>
+    <string name="password_label">Password</string>
+    <string name="hint_input">input...</string>
+    <string name="today_history">Riwayat Hari Ini</string>
+    <string name="sample_name">Faisal</string>
+    <string name="sample_date">05/12/2024</string>
+    <string name="sample_time">08:42</string>
+    <string name="default_time_wib">--:--:-- WIB</string>
+    <string name="label_waktu">Waktu</string>
+    <string name="label_clock_in">Clock In</string>
+    <string name="attendance_in">Absensi Masuk</string>
+    <string name="logout">Logout</string>
+    <string name="copyright">Copyright by\nPT Teknologi Kartu Indonesia</string>
+    <string name="back">Kembali</string>
+    <string name="warning_title">Peringatan</string>
+    <string name="warning_location_desc">Layanan Lokasi Belum Aktif, Silahkan Aktifkan Layanan Lokasi Terlebih Dahulu</string>
+    <string name="btn_activate">Aktifkan</string>
+    <string name="btn_continue">Lanjutkan</string>
+    <string name="label_employee_name">Nama Karyawan</string>
+    <string name="label_attendance_time">Waktu Absen</string>
+    <string name="label_longitude">Longitude</string>
+    <string name="label_latitude">Latitude</string>
+    <string name="label_photo_proof">Bukti Foto</string>
+    <string name="btn_browse">Browse</string>
+    <string name="hint_upload">Upload...</string>
+    <string name="photo_format_hint">Format jpg max 2mb</string>
+    <string name="btn_send_attendance">Kirim Absensi</string>
+    <string name="success_title">Berhasil</string>
+    <string name="office_location">Kantor Pusat</string>
+    <string name="btn_home">Home</string>
+    <string name="sample_date_time">9 Desember 2025; 09:00</string>
+</resources>

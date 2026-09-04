@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_orange">#F4840B</color>
+    <color name="brand_dark">#171E28</color>
+    <color name="bg_gray">#EEEFF3</color>
+    <color name="gray_text">#8E8E93</color>
+    <color name="border_gray">#E5E5EA</color>
+    <color name="label_gray">#B9B9B9</color>
+    <color name="input_border">#D0D0D0</color>
+    <color name="placeholder_dark">#1F1F3A</color>
+    <color name="button_text_gray">#EAEAEA</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_c8">#C8C8C8</color>
+    <color name="purple_accent">#5947FC</color>
+    <color name="logout_red">#FF0B0B</color>
+    <color name="avatar_bg">#F1F1F3</color>
+    <color name="copyright_gray">#70717D</color>
+    <color name="warning_bg">#FFD6D6</color>
+    <color name="warning_text">#FF0000</color>
+    <color name="btn_disabled_gray">#CEC9C4</color>
+</resources>

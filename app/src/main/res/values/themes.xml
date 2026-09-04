@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AbsensiSeleksi" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_orange</item>
+        <item name="colorSecondary">@color/brand_dark</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Global Button Animation -->
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.Custom</item>
+        <item name="imageButtonStyle">@style/Widget.ImageButton.Custom</item>
+    </style>
+
+    <style name="Theme.AbsensiSeleksi" parent="Base.Theme.AbsensiSeleksi" />
+
+    <style name="Widget.Material3.Button.Custom" parent="Widget.Material3.Button">
+        <item name="android:stateListAnimator">@animator/button_click</item>
+    </style>
+
+    <style name="Widget.ImageButton.Custom" parent="Widget.AppCompat.ImageButton">
+        <item name="android:stateListAnimator">@animator/button_click</item>
+    </style>
+
+    <style name="username">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#B9B9B9</item>
+    </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

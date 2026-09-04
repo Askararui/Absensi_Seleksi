@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/bg_back"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSend"
+        app:layout_constraintTop_toBottomOf="@id/clHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="133dp"
+                android:layout_height="137dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground"
+                app:shapeAppearanceOverlay="@style/CircleImage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+                    <TextView
+                        android:id="@+id/tvLabelName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_employee_name"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:id="@+id/tvEmployeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLabelName"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/sample_name"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-medium" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_c8" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+                    <TextView
+                        android:id="@+id/tvLabelTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_attendance_time"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:id="@+id/tvAttendanceTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLabelTime"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/sample_date_time"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-medium" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_c8" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+                    <TextView
+                        android:id="@+id/tvLabelLon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_longitude"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:id="@+id/tvLongitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLabelLon"
+                        android:layout_marginTop="2dp"
+                        android:text="-74395730574307543"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-medium" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_c8" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp">
+                    <TextView
+                        android:id="@+id/tvLabelLat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_latitude"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:id="@+id/tvLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLabelLat"
+                        android:layout_marginTop="2dp"
+                        android:text="1109382480304-"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-medium" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_c8" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardBuktiFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingBottom="16dp"
+                    android:background="@drawable/frame_3461">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp">
+
+                        <TextView
+                            android:id="@+id/tvLabelPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/label_photo_proof"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif-medium"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/btnBrowse"
+                            android:layout_width="52dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_browse_button"
+                            android:gravity="center"
+                            android:text="@string/btn_browse"
+                            android:textColor="#666666"
+                            android:textSize="11sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvLabelPhoto" />
+
+                        <TextView
+                            android:id="@+id/tvHintUpload"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/hint_upload"
+                            android:textColor="@color/gray_c8"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/btnBrowse"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/btnBrowse"
+                            app:layout_constraintTop_toTopOf="@id/btnBrowse" />
+
+                        <View
+                            android:id="@+id/photoDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray_c8"
+                            app:layout_constraintTop_toBottomOf="@id/btnBrowse" />
+
+                        <TextView
+                            android:id="@+id/tvFormatHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/photo_format_hint"
+                            android:textColor="@color/purple_accent"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/photoDivider" />
+
+                        <ImageView
+                            android:id="@+id/ivPreviewBukti"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="12dp"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toBottomOf="@id/tvFormatHint" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_send_attendance"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
